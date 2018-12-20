@@ -26,4 +26,9 @@ class Angga extends CI_Controller
     {
         # code...
     }
+
+    public function tes lagi(Type $var = null)
+    {
+        # code...
+    }
 }
