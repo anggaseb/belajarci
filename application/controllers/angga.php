@@ -21,4 +21,9 @@ class Angga extends CI_Controller
     {
         $this->load->view('template');
     }
+
+    public function tes(Type $var = null)
+    {
+        # code...
+    }
 }
