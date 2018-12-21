@@ -36,7 +36,6 @@ class Product_model extends CI_Model {
         return $this->db->get_where($this->_table, ["product_id" => $id])->row();
     }
 
-    // Add a new item
     public function save()
     {
         $post = $this->input->post();
@@ -47,7 +46,6 @@ class Product_model extends CI_Model {
         $this->db->insert($this->_table, $this);
     }
 
-    //Update one item
     public function update()
     {
         $post = $this->input->post();
@@ -58,12 +56,8 @@ class Product_model extends CI_Model {
         $this->db->update($this->_table, $this, array('product_id' => $post['id']));
     }
 
-    //Delete one item
     public function delete($id)
     {
         return $this->db->delete($this->_table, array("product_id" => $id));
     }
 }
-
-/* End of file Controllername.php */
-
